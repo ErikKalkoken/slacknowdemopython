@@ -1,6 +1,8 @@
 {
   "version": 2,
-  "builds": [{ "src": "slash.py", "use": "@now/python" }],
+  "builds": [
+    { "src": "slash.py", "use": "@now/python" , "config": { "maxLambdaSize": "10mb" } }
+  ],
   "routes": [{ "src": "(.*)", "dest": "slash.py" }],
   "env": {
     "SLACK_TOKEN": "@slack_token"
