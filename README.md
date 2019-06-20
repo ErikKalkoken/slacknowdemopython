@@ -19,4 +19,6 @@ Needed Python packages:
 7. Add scopes `channels:read` and `groups:read`
 8. Install your Slack app into your workspace
 9. Retrieve the token from the Oauth page of your app and set the environment variable SLACK_TOKEN with it
+10. Add your slack token as secret to now with `now secret add slack_token xoxp-xxx`
+
 

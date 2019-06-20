@@ -1,5 +1,8 @@
 {
   "version": 2,
   "builds": [{ "src": "slash.py", "use": "@now/python" }],
-  "routes": [{ "src": "(.*)", "dest": "slash.py" }]
+  "routes": [{ "src": "(.*)", "dest": "slash.py" }],
+  "env": {
+    "SLACK_TOKEN": "@slack_token"
+  }  
 }
